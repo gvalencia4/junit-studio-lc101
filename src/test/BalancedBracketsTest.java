@@ -9,6 +9,7 @@ public class BalancedBracketsTest {
 
     //TODO: add tests here
     // Should we test if the method throws an exception if something other than a string is passed?
+
     @Test
     public void onlyBracketsReturnsTrue() {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[]"));
@@ -77,5 +78,4 @@ public class BalancedBracketsTest {
     public void stringWithLineBreakReturnsTrue() {
         assertTrue(BalancedBrackets.hasBalancedBrackets("Launch\nCode"));
     }
-
 }
