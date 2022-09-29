@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class BalancedBracketsTest {
-    
+
     // Should we test if the method throws an exception if something other than a string is passed?
 
     @Test
