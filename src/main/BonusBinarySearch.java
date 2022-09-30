@@ -11,6 +11,7 @@ public class BonusBinarySearch {
      * @param n - number to search for
      * @return index of search item if it's found, -1 if not found
      */
+
     public static int binarySearch(int[] sortedNumbers, int n) {
         int right = sortedNumbers.length - 1;
         int left = 0;
@@ -26,5 +27,21 @@ public class BonusBinarySearch {
         }
         return -1;
     }
+
+//    public static int binarySearch(int[] sortedNumbers, int n) {
+//        int right = sortedNumbers.length - 1;
+//        int left = 0;
+//        while (right >= left) {
+//            int mid = left + ((right - left) / 2);
+//            if (sortedNumbers[mid] > n) {
+//                right = mid;
+//            } else if (sortedNumbers[mid] < n) {
+//                left = mid;
+//            } else {
+//                return mid;
+//            }
+//        }
+//        return -1;
+//    }
 
 }

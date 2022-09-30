@@ -28,11 +28,11 @@ public class BalancedBrackets {
                 brackets++;
             } else if (ch == ']') {
                 brackets--;
-            }
 
-            // If a closed bracket appears before an open bracket, it can never be closed
-            if (brackets < 0) {
-                return false;
+                // If a closed bracket appears before an open bracket, it can never be closed
+                if (brackets < 0) {
+                    return false;
+                }
             }
         }
         return brackets == 0;
